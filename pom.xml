@@ -67,8 +67,7 @@
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
-            <!--suppress UnresolvedMavenProperty -->
-            <version>${org.mapstruct.version}</version>
+            <version>1.4.2.Final</version>
         </dependency>
 
     </dependencies>
@@ -95,7 +94,7 @@
                             <groupId>org.mapstruct</groupId>
                             <artifactId>mapstruct-processor</artifactId>
                             <!--suppress UnresolvedMavenProperty -->
-                            <version>${org.mapstruct.version}</version>
+                            <version>1.4.2.final</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
