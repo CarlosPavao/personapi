@@ -1,4 +1,4 @@
-package com.carlospavao.github.personapi.entity;
+package com.carlospavao.github.personapi.dto.request;
 
 
 import com.carlospavao.github.personapi.enums.PhoneType;
@@ -6,24 +6,27 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import javax.persistence.Entity;
 
-import javax.persistence.*;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
-@Entity
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Phone {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class PhoneDTO {
+
+    private long id;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
     private PhoneType type;
 
-    @Column(nullable = false)
+    @NotEmpty
+    @Size(min = 13, max = 14)
     private String number;
+
+
+
 }
