@@ -1,6 +1,5 @@
 package com.carlospavao.github.personapi.mapper;
 
-
 import com.carlospavao.github.personapi.dto.request.PersonDTO;
 import com.carlospavao.github.personapi.entity.Person;
 import org.mapstruct.Mapper;

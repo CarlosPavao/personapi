@@ -1,6 +1,5 @@
 package com.carlospavao.github.personapi.enums;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

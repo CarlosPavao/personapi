@@ -1,6 +1,5 @@
 package com.carlospavao.github.personapi.dto.request;
 
-
 import com.carlospavao.github.personapi.enums.PhoneType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,7 +17,7 @@ import javax.validation.constraints.Size;
 @NoArgsConstructor
 public class PhoneDTO {
 
-    private long id;
+    private Long id;
 
     @Enumerated(EnumType.STRING)
     private PhoneType type;
@@ -26,7 +25,4 @@ public class PhoneDTO {
     @NotEmpty
     @Size(min = 13, max = 14)
     private String number;
-
-
-
 }
